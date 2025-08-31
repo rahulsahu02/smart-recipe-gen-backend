@@ -11,6 +11,5 @@ python-dotenv
 Pillow
 Werkzeug
 pymongo
-bson
 requests
 gunicorn
