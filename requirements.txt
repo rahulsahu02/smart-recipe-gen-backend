@@ -1,0 +1,16 @@
+Flask
+Flask-CORS
+Flask-PyMongo
+Flask-JWT-Extended
+google-generativeai
+google-api-python-client
+google-auth
+google-auth-httplib2
+duckduckgo-search
+python-dotenv
+Pillow
+Werkzeug
+pymongo
+bson
+requests
+gunicorn
