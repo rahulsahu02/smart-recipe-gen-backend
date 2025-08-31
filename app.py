@@ -24,8 +24,8 @@ GOOGLE_CSE_ID = os.getenv("CUSTOM_SEARCH_ENGINE_ID")
 
 if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
-    vision_model = genai.GenerativeModel('gemini-2.5-pro')
-    text_model = genai.GenerativeModel('gemini-2.5-pro')
+    vision_model = genai.GenerativeModel('gemini-2.5-flash')
+    text_model = genai.GenerativeModel('gemini-2.5-flash')
 else:
     print("WARNING: GOOGLE_API_KEY not set. The application will not work without it.")
     vision_model = None
@@ -293,7 +293,7 @@ def generate_recipes():
     --- DATABASE RECIPES ---
     {db_matches_string}
     --- END DATABASE RECIPES ---
-    Please generate 6-7 NEW and DIFFERENT creative recipes that also fit the user's request. Do NOT repeat the recipes I provided above.
+    Please generate 2-3 NEW and DIFFERENT creative recipes that also fit the user's request. Do NOT repeat the recipes I provided above.
     For each new recipe, provide: "title", "description", "ingredients" (list of objects with "name" and "quantity"), "instructions" (list), "cookingTime" (integer), "difficulty", "nutritionalInfo", "servings".
     Format the final output as a valid JSON array of recipe objects. Do not include markdown.
     """
